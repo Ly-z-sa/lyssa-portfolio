@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects - Lyssa Phat</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="L.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-animated-gradient text-slate-800">
+
+    <header class="glass-nav fixed left-1/2 -translate-x-1/2 top-6 z-50 rounded-2xl max-w-4xl w-[95vw] mx-auto">
+        <nav class="container mx-auto px-6 py-4 flex justify-center items-center">
+            <a href="portfoliopage.html" class="back-link">
+                <span class="link-text">Back to Home</span>
+            </a>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 pt-32 pb-12">
+        <div class="glass-card p-8 md:p-12 rounded-2xl shadow-xl" data-aos="fade-up">
+            <h1 class="text-4xl font-bold text-slate-900 mb-8 text-center section-header">My Projects</h1>
+            
+            <div class="mb-8" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-2xl font-semibold text-slate-800">Movie Quiz</h3>
+                <p class="text-blue-500 font-medium mb-2">HTML, Tailwind CSS, JavaScript</p>
+                <p class="text-slate-600 leading-relaxed">
+                    Describe the project in more detail. What was the goal? What challenges did you face? You could include screenshots, a more detailed feature list, and what you learned from building it.
+                </p>
+                <a href="https://github.com/Ly-z-sa/movie-quiz" target="_blank" class="glass-btn inline-block font-semibold mt-4 py-2 px-5 rounded-xl shadow-lg">View on GitHub</a>
+            </div>
+
+            <div class="mb-8" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-2xl font-semibold text-slate-800">Hangman Game</h3>
+                <p class="text-blue-500 font-medium mb-2">HTML, CSS, JavaScript, Firebase</p>
+                <p class="text-slate-600 leading-relaxed">
+                   Elaborate on the technical aspects. How did you use Firebase? What was the logic behind the game? This is a good place to talk about the architecture of the application and your problem-solving process.
+                </p>
+                 <a href="https://hangme-an.netlify.app/" target="_blank" class="glass-btn inline-block font-semibold mt-4 py-2 px-5 rounded-xl shadow-lg">Live Demo</a>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="300">
+                <h3 class="text-2xl font-semibold text-slate-800">TBD Project</h3>
+                <p class="text-blue-500 font-medium mb-2">TBD</p>
+                <p class="text-slate-600 leading-relaxed">
+                    Once you have a new project, you can add the details here. Talk about the technologies you used and the problems you solved.
+                </p>
+            </div>
+        </div>
+    </main>
+    
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true, offset: 50 });
+    </script>
+</body>
+</html>
