@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyssa - Personal Portfolio</title>
+    <meta name="description" content="Lyssa Phat's personal portfolio showcasing academic achievements, projects, and volunteering experiences.">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Lyssa Phat Portfolio",
+      "url": "https://portfolio-byliza.netlify.app/"
+    }
+    </script>
+    <link rel="icon" type="image/png" sizes="32x32" href="L.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LYQLF3MPTR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LYQLF3MPTR');
+    </script>
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+      .modal-hidden { display: none !important; }
+    </style>
+</head>
+<body class="bg-animated-gradient text-slate-800">
+
+    <header class="glass-nav fixed left-1/2 -translate-x-1/2 top-6 z-50 border-b border-slate-200 transition-all duration-300 rounded-2xl shadow-xl max-w-7xl w-[95vw] mx-auto" id="main-header">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="#home" class="flex items-center">
+                    <img src="lyssa-femi.png" alt="Lyssa Phat Logo" class="h-10 max-h-14 w-auto object-contain" />
+                </a>
+                <nav class="hidden md:flex relative">
+                    <a href="#about" class="nav-link mx-4 text-slate-600 hover:text-blue-500 transition-colors"><span class="magic-text">About</span></a>
+                    <a href="#academics" class="nav-link mx-4 text-slate-600 hover:text-blue-500 transition-colors"><span class="magic-text">Academics</span></a>
+                    <a href="#projects" class="nav-link mx-4 text-slate-600 hover:text-blue-500 transition-colors"><span class="magic-text">Projects</span></a>
+                    <a href="#volunteering" class="nav-link mx-4 text-slate-600 hover:text-blue-500 transition-colors"><span class="magic-text">Volunteering</span></a>
+                    <a href="#contact" class="nav-link mx-4 text-slate-600 hover:text-blue-500 transition-colors"><span class="magic-text">Contact</span></a>
+                    <div id="magic-line" class="absolute bottom-0 h-0.5 bg-blue-500 rounded transition-all duration-300" style="left:0;width:0"></div>
+                </nav>
+                <button id="mobile-menu-button" class="md:hidden text-slate-800">
+                    <svg id="icon-hamburger" class="w-6 h-6 block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                    <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#about" class="nav-link block py-2 text-slate-600 hover:text-blue-500"><span class="magic-text">About</span></a>
+            <a href="#academics" class="nav-link block py-2 text-slate-600 hover:text-blue-500"><span class="magic-text">Academics</span></a>
+            <a href="#projects" class="nav-link block py-2 text-slate-600 hover:text-blue-500"><span class="magic-text">Projects</span></a>
+            <a href="#volunteering" class="nav-link block py-2 text-slate-600 hover:text-blue-500"><span class="magic-text">Volunteering</span></a>
+            <a href="#contact" class="nav-link block py-2 text-slate-600 hover:text-blue-500"><span class="magic-text">Contact</span></a>
+        </div>
+    </header>
+
+    <main class="pt-20">
+
+    <section id="home" class="relative flex items-center justify-center bg-animated-gradient overflow-hidden min-h-screen" data-aos="fade">
+        <div class="relative w-[95vw] max-w-7xl flex flex-col md:flex-row items-stretch rounded-3xl shadow-2xl overflow-hidden md:h-[80vh] md:min-h-[500px]" style="background: #bae6fd;">
+            <div class="hidden md:block" style="position: absolute; inset: 0; z-index: 1; background: #fff; clip-path: polygon(0 0, 42.5% 0, 34% 100%, 0% 100%);"></div>
+            <div class="absolute inset-0 z-20 pointer-events-none hidden md:block">
+                <svg width="100%" height="100%" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block;position:absolute;top:0;left:0;width:100%;height:100%;">
+                    <line x1="320" y1="0" x2="120" y2="1000" stroke="#38bdf8" stroke-width="8"/>
+                    <line x1="332" y1="0" x2="132" y2="1000" stroke="#2563eb" stroke-width="2"/>
+                </svg>
+            </div>
+            <div class="flex-none w-full md:w-[30%] flex flex-col items-center justify-center relative z-10 pr-0 md:pr-8 py-8 md:py-0">
+                <img src="lyssa-p.png" alt="Lyssa Phat" class="w-40 h-40 md:w-56 md:h-56 lg:w-64 lg:h-64 object-contain mb-4" onerror="this.onerror=null;this.src='https://placehold.co/256x256/transparent/334155?text=Lyssa';">
+            </div>
+            <div class="flex-1 flex items-center justify-center relative z-10 pl-0 md:pl-12 pb-8 md:pb-0">
+                <div class="glass-card rounded-2xl shadow-xl max-w-xl w-full md:mr-7 p-6 md:p-10 h-[90%] lg:p-10 ml-0 md:ml-auto md:max-h-[80vh] overflow-hidden">
+                    <h1 class="text-3xl md:text-6xl font-extrabold text-slate-900 mb-4 tracking-tight leading-tight text-center md:text-left">
+                        Hi, I'm <span class="text-blue-600">Lyssa Phat</span>
+                    </h1>
+                    <p class="mt-2 text-base md:text-xl text-slate-700 max-w-2xl font-medium text-center md:text-left">
+                        IT Engineering Student at Royal University of Phnom Penh<br>
+                        Passionate about <span class="text-blue-500">Web & App Development</span>
+                    </p>
+                    <p class="mt-4 text-sm md:text-base text-slate-500 max-w-xl text-center md:text-left">
+                        I love building digital solutions, exploring new tech, and collaborating on creative projects. Welcome to my portfolio!
+                    </p>
+                    <div class="mt-8 flex flex-col md:flex-row w-full gap-4">
+                        <a href="#contact" class="glass-btn w-full md:w-auto text-blue-700 font-semibold py-3 px-7 rounded-xl shadow-lg border border-white/30 hover:backdrop-blur-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2">Contact</a>
+                        <a href="#projects" class="glass-btn w-full md:w-auto text-blue-700 font-semibold py-3 px-7 rounded-xl shadow-lg border border-white/30 hover:backdrop-blur-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-200 focus:ring-offset-2">My Work</a>
+                        <a href="Phat-Liza-CV (1).pdf" download class="glass-btn w-full md:w-auto text-blue-700 font-semibold py-3 px-7 rounded-xl shadow-lg border border-white/30 hover:backdrop-blur-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 inline-flex items-center justify-center space-x-2">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                            <span>Resume</span>
+                        </a>
+                    </div>
+                    <div class="mt-8 flex justify-center md:justify-start gap-6">
+                        <a href="https://github.com/ly-z-sa" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-blue-500 transition-colors duration-200 transform hover:-translate-y-1"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd" /></svg></a>
+                        <a href="https://t.me/Ly_z_sa" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-blue-500 transition-colors duration-200 transform hover:-translate-y-1"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.993 15.674l-.396 4.013c.569 0 .814-.244 1.112-.537l2.664-2.537 5.522 4.029c1.012.557 1.732.264 1.984-.938l3.599-16.858c.328-1.527-.553-2.127-1.54-1.76l-21.04 8.104c-1.44.557-1.425 1.354-.247 1.713l5.382 1.682 12.497-7.87c.588-.382 1.124-.17.684.212"/></svg></a>
+                        <a href="https://wa.me/+855969043129" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-blue-500 transition-colors duration-200 transform hover:-translate-y-1"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.52 3.48A11.93 11.93 0 0012 0C5.37 0 0 5.37 0 12c0 2.11.55 4.16 1.6 5.98L0 24l6.18-1.62A11.93 11.93 0 0012 24c6.63 0 12-5.37 12-12 0-3.19-1.24-6.19-3.48-8.52zM12 22c-1.85 0-3.68-.5-5.26-1.44l-.38-.22-3.67.96.98-3.58-.25-.39A9.93 9.93 0 012 12c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10zm5.07-7.75c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.41-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.18-.29.28-.48.09-.19.05-.36-.02-.5-.07-.14-.61-1.47-.84-2.01-.22-.54-.45-.47-.61-.48-.16-.01-.35-.01-.54-.01-.19 0-.5.07-.76.34-.26.27-1 1.01-1 2.46s1.02 2.85 1.16 3.05c.14.2 2.01 3.07 4.88 4.19.68.29 1.21.46 1.62.59.68.22 1.3.19 1.79.12.55-.08 1.65-.67 1.88-1.32.23-.65.23-1.21.16-1.32-.07-.11-.25-.18-.53-.32z"/></svg></a>
+                        <a href="https://facebook.com/Lyzssa" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-blue-500 transition-colors duration-200 transform hover:-translate-y-1"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.408.595 24 1.326 24H12.82v-9.294H9.692v-3.622h3.127V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.408 24 22.674V1.326C24 .592 23.406 0 22.675 0"/></svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 md:py-32">
+        <div class="container mx-auto px-6">
+            <h2 class="section-header text-3xl font-bold text-center text-slate-900 mb-12" data-aos="fade-up">About Me</h2>
+            <div class="max-w-4xl mx-auto glass-card p-8 md:p-12 rounded-xl shadow-lg hover:-translate-y-2 transition-transform duration-300" data-aos="zoom-in" data-aos-delay="100">
+                <p class="text-slate-600 leading-relaxed text-lg" data-aos="fade-right" data-aos-delay="200">
+                    Hello! I'm Lyssa Phat, and I'm currently studying IT Engineering at Royal University of Phnom Penh. My journey into web/app development began with a fascination for innovative ideas to solve real world problems. Since then, I've been dedicated to learning and growing in this field. 
+                </p>
+                <p class="mt-4 text-slate-600 leading-relaxed text-lg" data-aos="fade-left" data-aos-delay="300">
+                    Outside of academics, I enjoy Coding, Reading, and exploring new knowledge about the world. I believe in the power of continuous learning and am always looking for new challenges and opportunities to make a positive impact. This portfolio is a glimpse into my world, my work, and my aspirations.
+                </p>
+            </div>
+        </div>
+    </section> 
+
+    <section id="academics" class="py-20 md:py-32">
+        <div class="container mx-auto px-6">
+            <a href="achievements.html" class="section-link" data-aos="fade-up">
+                <h2 class="section-header text-3xl font-bold text-center text-slate-900">Academic Achievements</h2>
+            </a>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                <div class="glass-card rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300" data-aos="flip-left">
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">RUPP</h3>
+                        <p class="text-blue-500 font-medium mb-4">[Semester II/First year], [RUPP]</p>
+                        <p class="text-slate-600">Achieved a GPA of [TBD] through dedicated study and a strong work ethic in challenging coursework.</p>
+                    </div>
+                </div>
+                <div class="glass-card rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300" data-aos="flip-left" data-aos-delay="100">
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Scholarship Recipient</h3>
+                        <p class="text-blue-500 font-medium mb-4">[MoEYs], [2025]</p>
+                        <p class="text-slate-600">Awarded for academic excellence and leadership potential in the field of technology.</p>
+                    </div>
+                </div>
+                <div class="glass-card rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300" data-aos="flip-left" data-aos-delay="200">
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Research Project</h3>
+                        <p class="text-blue-500 font-medium mb-4">"AI impact on job.", 20/04/2025</p>
+                        <p class="text-slate-600">Conducted research on AI and its impact on the job industry , contributing to the evolving world of technology especially Artificial Intelligence(AI) and the impact of AI on the job industry.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 md:py-32">
+        <div class="container mx-auto px-6">
+            <a href="projects.html" class="section-link" data-aos="fade-up">
+                <h2 class="section-header text-3xl font-bold text-center text-slate-900">My Projects</h2>
+            </a>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                <div class="glass-card rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300" data-aos="fade-up">
+                    <img src="https://placehold.co/600x400/e0f2fe/334155?text=Project+Image" alt="A placeholder image for your project" class="w-full h-48 object-cover">
+                    <div class="p-8" data-aos="fade-right">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Movie Quiz</h3>
+                        <p class="text-blue-500 font-medium mb-4">HTML, Tailwind CSS, JavaScript</p>
+                        <p class="text-slate-600 mb-4">A small quiz game about movies to test your knowledge with it interactive and user-friendly UX/UI.</p>
+                        <a href="https://github.com/Ly-z-sa/movie-quiz" class="text-blue-600 font-semibold hover:underline">View on GitHub &rarr;</a>
+                    </div>
+                </div>
+                <div class="glass-card rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://placehold.co/600x400/e0f2fe/334155?text=Project+Image" alt="A placeholder image for your project" class="w-full h-48 object-cover">
+                    <div class="p-8" data-aos="fade-right">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Hangman</h3>
+                        <p class="text-blue-500 font-medium mb-4">HTML, CSS, JavaScript, Firebase</p>
+                        <p class="text-slate-600 mb-4">A very fun game to play alone or with your friends. The hangman game include words from different category and some of them is definitely a challenge. So try it out wont you.</p>
+                        <a href="https://hangme-an.netlify.app/" class="text-blue-600 font-semibold hover:underline">Live Demo &rarr;</a>
+                    </div>
+                </div>
+                <div class="glass-card rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://placehold.co/600x400/e0f2fe/334155?text=Project+Image" alt="A placeholder image for your project" class="w-full h-48 object-cover">
+                    <div class="p-8" data-aos="fade-right">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">TBD</h3>
+                        <p class="text-blue-500 font-medium mb-4">TBD</p>
+                        <p class="text-slate-600 mb-4">TBD</p>
+                        <a href="#" class="text-blue-600 font-semibold hover:underline">TBD &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="volunteering" class="py-20 md:py-32">
+        <div class="container mx-auto px-6">
+            <a href="volunteering.html" class="section-link" data-aos="fade-up">
+                <h2 class="section-header text-3xl font-bold text-center text-slate-900">Volunteering Experience</h2>
+            </a>
+            <div class="max-w-4xl mx-auto space-y-8 mt-12">
+                <div class="glass-card p-8 rounded-xl shadow-lg flex flex-col md:flex-row gap-6 items-start" data-aos="fade-up">
+                    <div class="w-full md:w-1/3">
+                        <h3 class="text-xl font-bold text-slate-900">MoEYs</h3>
+                        <p class="text-blue-500 font-medium">Education Advocate</p>
+                        <p class="text-sm text-slate-500 mt-1">01/03/2023-30/03/2023</p>
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <p class="text-slate-600">As an education advocate for MoEYs, I was responsible for sharing information about effective ways of learning in the 21st century with the help of technologies, especially an app called "Duraekseksa" by MoEYS.</p>
+                    </div>
+                </div>
+                <div class="glass-card p-8 rounded-xl shadow-lg flex flex-col md:flex-row gap-6 items-start" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-full md:w-1/3">
+                        <h3 class="text-xl font-bold text-slate-900">NGS, Preah Sisowath</h3>
+                        <p class="text-blue-500 font-medium">Master of Ceremonies</p>
+                        <p class="text-sm text-slate-500 mt-1">24/06/2024</p>
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <p class="text-slate-600">Served as one of the MCs for the STUDENT ACHIEVEMENT FAIR 2024, proudly standing on stage showcasing my public speaking and language skills on behalf of my high school.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 md:py-32">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4 text-slate-900" data-aos="fade-up">Let's Connect</h2>
+            <p class="max-w-2xl mx-auto text-slate-700 mb-12" data-aos="fade-up" data-aos-delay="100">
+            I'm always open to discussing new projects, creative ideas, or opportunities to be part of an amazing team. Feel free to reach out!
+            </p>
+            
+            <button id="show-contact-form" class="glass-btn mb-8 text-blue-700 font-semibold py-3 px-7 rounded-xl shadow-lg border border-white/30 hover:backdrop-blur-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2" data-aos="fade-up" data-aos-delay="200">
+                Show Contact Form
+            </button>
+
+            <div class="max-w-xl mx-auto glass-card text-slate-800 rounded-xl shadow-lg p-8 mb-12 text-left hidden hover:-translate-y-2 transition-transform duration-300" id="contact-form-container" data-aos="zoom-in" data-aos-delay="300">
+                <form id="contact-form" action="https://formspree.io/f/xpwrpnkn" method="POST">
+                    <div class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-slate-700">Your Name</label>
+                            <input type="text" id="name" name="name" required class="mt-1 block w-full px-4 py-2 border border-slate-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-slate-700">Your Email</label>
+                            <input type="email" id="email" name="email" required class="mt-1 block w-full px-4 py-2 border border-slate-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-slate-700">Your Message</label>
+                            <textarea id="message" name="message" rows="4" required class="mt-1 block w-full px-4 py-2 border border-slate-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="glass-btn w-full text-blue-700 font-semibold py-3 px-7 rounded-xl shadow-lg border border-white/30 hover:backdrop-blur-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2">
+                                Send Message
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div id="form-success" class="hidden mb-8 text-green-600 font-semibold text-center" data-aos="fade-up">
+                Thank you for your interest. I'll reach out to you as soon as possible!
+            </div>
+
+            <div class="flex justify-center space-x-6 mt-6" data-aos="fade-up" data-aos-delay="400">
+                <a href="https://github.com/ly-z-sa" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-blue-500 transition-colors duration-200 transform hover:-translate-y-1"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.504.5.092.682-.217.682-.483 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd" /></svg></a>
+                <a href="https://t.me/Ly_z_sa" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-blue-500 transition-colors duration-200 transform hover:-translate-y-1"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M9.993 15.674l-.396 4.013c.569 0 .814-.244 1.112-.537l2.664-2.537 5.522 4.029c1.012.557 1.732.264 1.984-.938l3.599-16.858c.328-1.527-.553-2.127-1.54-1.76l-21.04 8.104c-1.44.557-1.425 1.354-.247 1.713l5.382 1.682 12.497-7.87c.588-.382 1.124-.17.684.212"/></svg></a>
+                <a href="https://wa.me/+855969043129" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-blue-500 transition-colors duration-200 transform hover:-translate-y-1"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.52 3.48A11.93 11.93 0 0012 0C5.37 0 0 5.37 0 12c0 2.11.55 4.16 1.6 5.98L0 24l6.18-1.62A11.93 11.93 0 0012 24c6.63 0 12-5.37 12-12 0-3.19-1.24-6.19-3.48-8.52zM12 22c-1.85 0-3.68-.5-5.26-1.44l-.38-.22-3.67.96.98-3.58-.25-.39A9.93 9.93 0 012 12c0-5.52 4.48-10 10-10s10 4.48 10 10-4.48 10-10 10zm5.07-7.75c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.44-2.25-1.41-.83-.74-1.39-1.65-1.55-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.34.42-.51.14-.17.18-.29.28-.48.09-.19.05-.36-.02-.5-.07-.14-.61-1.47-.84-2.01-.22-.54-.45-.47-.61-.48-.16-.01-.35-.01-.54-.01-.19 0-.5.07-.76.34-.26.27-1 1.01-1 2.46s1.02 2.85 1.16 3.05c.14.2 2.01 3.07 4.88 4.19.68.29 1.21.46 1.62.59.68.22 1.3.19 1.79.12.55-.08 1.65-.67 1.88-1.32.23-.65.23-1.21.16-1.32-.07-.11-.25-.18-.53-.32z"/></svg></a>
+                <a href="https://facebook.com/Lyzssa" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-blue-500 transition-colors duration-200 transform hover:-translate-y-1"><svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.408.595 24 1.326 24H12.82v-9.294H9.692v-3.622h3.127V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.408 24 22.674V1.326C24 .592 23.406 0 22.675 0"/></svg></a>
+            </div>
+            <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4" data-aos="fade-up" data-aos-delay="500">
+                <button id="copy-link-btn" class="glass-btn w-full sm:w-auto text-blue-700 font-semibold py-3 px-7 rounded-xl shadow-lg border border-white/30 hover:backdrop-blur-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 inline-flex items-center justify-center space-x-2">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                    <span>Copy Portfolio Link</span>
+                </button>
+                <button id="show-qr-btn" class="glass-btn w-full sm:w-auto text-blue-700 font-semibold py-3 px-7 rounded-xl shadow-lg border border-white/30 hover:backdrop-blur-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 inline-flex items-center justify-center space-x-2">
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M4 4h6v6H4V4Zm10 10h6v6h-6v-6Zm0-10h6v6h-6V4Zm-4 10h.01v.01H10V14Zm0 4h.01v.01H10V18Zm-3 2h.01v.01H7V20Zm0-4h.01v.01H7V16Zm-3 2h.01v.01H4V18Zm0-4h.01v.01H4V14Z"/>
+                        <path stroke="currentColor" stroke-linejoin="round" stroke-width="2" d="M7 7h.01v.01H7V7Zm10 10h.01v.01H17V17Z"/>
+                    </svg>
+                    <span>Show QR Code</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    </main>
+    
+    <footer id="site-footer" class="bg-slate-800 py-6">
+        <div class="container mx-auto px-6 text-center">
+            <div class="inline-block px-6 py-2 rounded-full bg-slate-100 text-slate-600 text-sm shadow-sm" style="font-family: 'Inter', sans-serif;">
+                <span>&copy;</span> <span id="copyright-year"></span> Lyssa Phat. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <div id="qr-modal" class="modal-hidden fixed inset-0 bg-slate-900 bg-opacity-60 backdrop-blur-sm flex items-center justify-center p-4 z-[999]">
+        <div class="bg-white rounded-2xl shadow-2xl p-6 w-full max-w-xs text-center relative" data-aos="zoom-in">
+            <button id="close-qr-btn" class="absolute -top-2 -right-2 bg-white text-slate-700 rounded-full w-8 h-8 flex items-center justify-center shadow-lg hover:bg-slate-200 transition-all">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <h3 class="text-xl font-bold text-slate-800 mb-4">Scan My Portfolio QR</h3>
+            <img src="portfolio-qrcode.png" alt="Portfolio QR Code" class="w-full h-auto object-contain rounded-lg border-2 border-slate-200 p-1">
+            <p class="text-xs text-slate-500 mt-4">Open your camera app and point it here to instantly get the link!</p>
+        </div>
+    </div>
+    
+    <script>
+        // Animate footer on scroll into view
+        window.addEventListener('DOMContentLoaded', () => {
+            const footer = document.getElementById('site-footer');
+            setTimeout(() => {
+                footer.classList.remove('opacity-0', 'translate-y-6');
+                footer.classList.add('opacity-100', 'translate-y-0');
+            }, 300);
+        });
+    </script>
+
+    <script>
+        // Magic Line underline animation for navbar
+        const nav = document.querySelector('nav');
+        const magicLine = document.getElementById('magic-line');
+        const navLinksArr = Array.from(document.querySelectorAll('.nav-link'));
+
+        function moveMagicLineTo(link) {
+            if (!link) return;
+            const navRect = nav.getBoundingClientRect();
+            const textSpan = link.querySelector('.magic-text') || link;
+            const textRect = textSpan.getBoundingClientRect();
+            const left = textRect.left - navRect.left;
+            const width = textRect.width;
+
+            magicLine.style.transition = 'left 0.25s cubic-bezier(.4,0,.2,1)';
+            magicLine.style.left = `${left}px`;
+
+            setTimeout(() => {
+                magicLine.style.transition = 'width 0.25s cubic-bezier(.4,0,.2,1)';
+                magicLine.style.width = `${width}px`;
+            }, 120);
+        }
+
+        function updateMagicLine() {
+            const active = document.querySelector('.nav-link.active-nav');
+            moveMagicLineTo(active);
+        }
+
+        navLinksArr.forEach(link => {
+            link.addEventListener('click', () => {
+                setTimeout(updateMagicLine, 10);
+            });
+        });
+
+        window.addEventListener('scroll', () => {
+            setTimeout(updateMagicLine, 10);
+        });
+        window.addEventListener('resize', updateMagicLine);
+        window.addEventListener('DOMContentLoaded', updateMagicLine);
+    </script>
+
+    <script>
+        // Toggle mobile menu and icons
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const hamburgerIcon = document.getElementById('icon-hamburger');
+        const closeIcon = document.getElementById('icon-close');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            hamburgerIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        });
+
+        const mobileMenuLinks = mobileMenu.getElementsByTagName('a');
+        for (let link of mobileMenuLinks) {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                hamburgerIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            });
+        }
+
+        // Show contact form on button click
+        const showContactBtn = document.getElementById('show-contact-form');
+        const contactFormContainer = document.getElementById('contact-form-container');
+
+        showContactBtn.addEventListener('click', () => {
+            contactFormContainer.classList.remove('hidden');
+            showContactBtn.classList.add('hidden');
+        });
+
+        // Handle Formspree AJAX submission and show success message
+        const contactForm = document.getElementById('contact-form');
+        const formSuccess = document.getElementById('form-success');
+
+        if (contactForm) {
+            contactForm.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                const data = new FormData(contactForm);
+                const action = contactForm.getAttribute('action');
+                try {
+                    const response = await fetch(action, {
+                        method: 'POST',
+                        body: data,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    });
+                    if (response.ok) {
+                        contactForm.reset();
+                        contactFormContainer.classList.add('hidden');
+                        formSuccess.classList.remove('hidden');
+                    } else {
+                        alert('Oops! There was a problem submitting your form.');
+                    }
+                } catch (error) {
+                    alert('Oops! There was a problem submitting your form.');
+                }
+            });
+        }
+
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 60
+        });
+    </script>
+
+    <script>
+        // ScrollSpy for navigation
+        const sections = ['about', 'academics', 'projects', 'volunteering', 'contact'];
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        function onScroll() {
+            let scrollPos = window.scrollY + 120;
+            let current = '';
+            for (let id of sections) {
+                const section = document.getElementById(id);
+                if (section && section.offsetTop <= scrollPos) {
+                    current = id;
+                }
+            }
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active-nav');
+                } else {
+                    link.classList.remove('active-nav');
+                }
+            });
+        }
+        window.addEventListener('scroll', onScroll);
+        window.addEventListener('DOMContentLoaded', onScroll);
+    </script>
+
+    <script>
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- Setup for Copy Link Button ---
+            const copyButton = document.getElementById('copy-link-btn');
+            const portfolioUrl = 'https://portfolio-byliza.netlify.app/';
+
+            if (copyButton) {
+                copyButton.addEventListener('click', () => {
+                    navigator.clipboard.writeText(portfolioUrl).then(() => {
+                        const originalText = copyButton.innerHTML;
+                        copyButton.innerHTML = 'Copied! ✔';
+                        copyButton.disabled = true;
+                        setTimeout(() => {
+                            copyButton.innerHTML = originalText;
+                            copyButton.disabled = false;
+                        }, 2000);
+                    }).catch(err => {
+                        console.error('Failed to copy text: ', err);
+                        alert('Oops, could not copy the link!');
+                    });
+                });
+            }
+
+            // --- Setup for QR Code Modal Button (Now separate and correct) ---
+            const qrModal = document.getElementById('qr-modal');
+            const showQrBtn = document.getElementById('show-qr-btn');
+            const closeQrBtn = document.getElementById('close-qr-btn');
+
+            if (showQrBtn) {
+                showQrBtn.addEventListener('click', () => {
+                    qrModal.classList.remove('modal-hidden');
+                });
+            }
+            
+            if (closeQrBtn) {
+                closeQrBtn.addEventListener('click', () => {
+                    qrModal.classList.add('modal-hidden');
+                });
+            }
+            
+            if (qrModal) {
+                qrModal.addEventListener('click', (event) => {
+                    // Close modal if backdrop is clicked
+                    if (event.target === qrModal) {
+                        qrModal.classList.add('modal-hidden');
+                    }
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
